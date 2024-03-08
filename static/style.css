@@ -1,0 +1,148 @@
+body {
+
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    background-image: url("istockphoto-1391602283-612x612.jpg");
+
+    margin: 10;
+    
+    
+  
+    
+}
+
+.heading-box {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    color: white;
+    padding: 10px;
+    display: flex;
+    height: 60px;
+    
+}
+.Work{
+    text-align: center;
+    margin-left:35% ;
+   } 
+.name {
+    margin-left: auto;
+    padding-right: 30px;
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.mid{padding-left: 33%;
+
+
+    padding-top: 2%;
+    margin: 0 auto;
+    
+    
+    
+
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust the width as needed */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.analysis-box {
+    background-color:lightslategray;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 20px; /* Add some space between the container and the analysis box */
+}
+.box1 {
+    background-color: #f2f2f2;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 20px; /* Add some space between the container and the analysis box */
+}
+.info {
+    margin-top: 20px;
+    width: 90%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.box2,.box3,.box4,.box5,.box6,.box7{ background-color: #f2f2f2;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 13%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 20px; /* Add some space between the container and the analysis box */
+
+}
+
+
+

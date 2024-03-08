@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input URL</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: aqua;">
+    <div class="heading-box">
+        <div class="Work">
+        <h1>Welcome to News Summarize</h1></div>
+        <div class="name">
+        <p><strong></strong> {{ name }}</p>
+    </div>
+    </div>
+    <div class="mid">
+        <div class="container">
+            <form action="/" method="post">
+                <label for="Name">Name:</label>
+            <input type="text" name="Name" placeholder="enter name " required><br>
+                <label for="url">Enter URL:</label><br>
+                <input type="text" placeholder="enter url" id="url" name="url"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <form action="/view_data" method="post">
+                <label for="password">Admin Password to History Data:</label>
+                <input type="password" placeholder="enter Password" id="password" name="password">
+                <input type="submit" value="Submit">
+            </form>
+
+            <h2>Login</h2>
+            <ul>
+                <li><a href="{{ url_for('github_login') }}">Login with GitHub</a></li>
+            </ul>
+            <h2>Login</h2>
+            <ul>
+                <li><a href="{{ url_for('index')}}">Login with Google</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="analysis-box"> 
+        <h2> Analysis of News-Text </h2>
+    </div>
+    <p class="box1"><strong>News-Text: {{ text }}</strong></p>
+        <div class="info">
+            <p class="box2"><strong>Number of Sentences:</strong> {{ sentences }}</p>
+            <p class="box3"><strong>Number of Words:</strong> {{ words }}</p>
+            <p class="box4"><strong>Number of Stop Words:</strong> {{ stop_words }}</p>
+            
+            <p class="box7"><strong>News Sentiment:</strong> {{ overall_sentiment }}</p>
+            <p class="box5"><strong>UPOS Tags Count:</strong> {{ upos_tags }}</p>
+            <p class="box6"><strong>Most Common Keywords:</strong> {{ keywords }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

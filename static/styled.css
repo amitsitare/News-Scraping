@@ -1,0 +1,76 @@
+/* styled.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: lightslategray;
+    color: white;
+    text-align: center; /* Center align column names */
+}
+
+/* Highlight word styles */
+.highlight {
+    background-color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Logout button styles */
+.logout-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding-bottom:10px;
+    padding-top: 10px;
+    display: inline;
+    padding-right: 30px;
+    height: 20px;
+    width: 80px;
+    background-color:  lightsalmon;
+    border-radius: 10px;
+   
+}
+.logout-container:hover {
+    background-color: lightgreen}
+
+.logout-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    
+}
+
+.logout-container ul li {
+    margin-left: 10px;
+}
+
+.logout-container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
