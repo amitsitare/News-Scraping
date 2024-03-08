@@ -62,7 +62,7 @@ github = oauth.register(
 
 
 conn=psycopg2.connect(
-        host='localhost',  database='country', user='postgres', password='Amit@123')
+        host='dpg-cnleda8l5elc73dq8j0g-a',  database='country_5aym', user='amit', password='J6O5kkf7wCcsGeN7XAgKWbL4rsMves0W')
 VIEW_DATA_PASSWORD = "amit"
 
 
