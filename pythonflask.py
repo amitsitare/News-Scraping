@@ -34,7 +34,7 @@ scopes = ['https://www.googleapis.com/auth/userinfo.profile',
           'openid']
 
 # Redirect URI for the OAuth flow to google
-redirect_uri = 'https://dhp1.onrender.com'
+redirect_uri = 'https://dhp1.onrender.com/google/login/callback'
 
 # Create the OAuth flow object
 flow = Flow.from_client_secrets_file(client_secrets_file, scopes=scopes, redirect_uri=redirect_uri)
