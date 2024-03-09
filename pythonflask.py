@@ -29,9 +29,8 @@ app.secret_key = 'hello'  # Secret key for session management
 client_secrets_file = 'client_secret_289671021146-e0uk4j9gucflnqh1dbnnqkh698l9for0.apps.googleusercontent.com.json'
 
 # Scopes define the level of access you are requesting from the user
-scopes = ['https://www.googleapis.com/auth/userinfo.profile',
-          'https://www.googleapis.com/auth/userinfo.email',
-          'openid']
+scopes = ['https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid
+          ]
 
 # Redirect URI for the OAuth flow to google
 redirect_uri = 'https://dhp1.onrender.com/google/login/callback'
