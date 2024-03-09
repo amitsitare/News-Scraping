@@ -12,6 +12,7 @@ click==8.0.3
 itsdangerous==2.0.1
 six==1.16.0
 authlib==0.15.3
+google-auth-oauthlib==0.4.6
 
 
 gunicorn
