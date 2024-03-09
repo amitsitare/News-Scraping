@@ -232,16 +232,28 @@ def callback():
     return redirect(url_for('protected'))
 
 # Protected route accessible only to authenticated users
+# Define the allowed email addresses
+allowed_emails = ['amitdiwakar946@gmail.com','kushal@sitare.org','su-23004@sitare.org']
+
 @app.route('/protected')
 def protected():
     if 'google_token' in session:
         # User is authenticated
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM clean_text")
-         
-        data = cursor.fetchall()
-        return render_template("detail.html",data=data)
+        # Get the user's email from the Google API
+        userinfo = requests.get('https://www.googleapis.com/oauth2/v2/userinfo', headers={'Authorization': f'Bearer {session["google_token"]}'})
+        email = userinfo.json().get('email')
+
+        # Check if the user's email is in the allowed list
+        if email in allowed_emails:
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM clean_text")
+            data = cursor.fetchall()
+            return render_template("detail.html", data=data)
+        else:
+            # User is not authorize
+            return redirect(url_for('submit'))
     else:
+        # User is not authenticated
         return redirect(url_for('submit'))
 
 
