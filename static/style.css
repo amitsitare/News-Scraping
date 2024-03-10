@@ -14,6 +14,10 @@ body {
     justify-content: center;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .Work {
@@ -26,16 +30,18 @@ body {
     background-color: white;
     color: black;
     width: 100px;
-    height: 25px;
+    height: 35px;
     border-radius: 10px;
-    padding: 5px;
-    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align:center;
+    
 }
 
 .mid {
     padding: 2% 5%;
     margin: 0 auto;
-    max-width: 600px; /* Adjust the max-width as needed */
+    max-width: 500px; /* Adjust the max-width as needed */
 }
 
 .container {
@@ -95,6 +101,8 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .box1 {
@@ -105,6 +113,8 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .info {
@@ -122,7 +132,10 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     flex-basis: 45%; /* Adjust the width as needed */
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 
 
 
