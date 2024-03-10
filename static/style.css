@@ -1,15 +1,8 @@
 body {
-
-    background-color:white;
-    align-items: center;
-    justify-content: center;
+    background-color: white;
     background-image: url("istockphoto-1391602283-612x612.jpg");
-
-    margin: 10;
-    
-    
-  
-    
+    margin: 0;
+    padding: 0;
 }
 
 .heading-box {
@@ -20,48 +13,37 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-bottom: 20px; 
-    color: white;
-    padding: 10px;
-    display: flex;
-    height: 60px;
-    
+    margin-bottom: 20px;
 }
-.Work{
+
+.Work {
     text-align: center;
-    margin-left:35% ;
-   } 
-.name {
     margin-left: auto;
-    padding-right: 30px;
+    margin-right: auto;
+}
+
+.name {
     background-color: white;
     color: black;
     width: 100px;
     height: 25px;
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding: 5px;
     text-align: center;
-    
 }
 
-.mid{padding-left: 33%;
-
-
-    padding-top: 2%;
+.mid {
+    padding: 2% 5%;
     margin: 0 auto;
-    
-    
-    
-
+    max-width: 600px; /* Adjust the max-width as needed */
 }
 
 .container {
     background-color: #f2f2f2;
-    padding: 50px;
+    padding: 20px;
     font-size: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px; /* Adjust the width as needed */
 }
 
 form {
@@ -91,7 +73,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
-    
 }
 
 h1, h2, h3 {
@@ -106,16 +87,16 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .analysis-box {
-    background-color:lightslategray;
-    padding: 2px;
+    background-color: lightslategray;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 20px; /* Add some space between the container and the analysis box */
+    margin-top: 20px;
 }
+
 .box1 {
     background-color: #f2f2f2;
     padding: 15px;
@@ -123,27 +104,26 @@ a:hover {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 20px; /* Add some space between the container and the analysis box */
+    margin-top: 20px;
 }
+
 .info {
     margin-top: 20px;
-    width: 90%;
-    padding-left: 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.box2,.box3,.box4,.box5,.box6,.box7{ background-color: #f2f2f2;
+
+.box2, .box3, .box4, .box5, .box6, .box7 {
+    background-color: #f2f2f2;
     padding: 15px;
     font-size: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 13%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 20px; /* Add some space between the container and the analysis box */
-
+    margin-top: 20px;
+    flex-basis: 45%; /* Adjust the width as needed */
 }
+
 
 
 
