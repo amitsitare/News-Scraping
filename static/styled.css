@@ -17,6 +17,7 @@ table {
 
 h1 {
     text-align: center;
+    margin-top: 30px; /* Adjust margin for better spacing */
 }
 
 th, td {
@@ -39,30 +40,25 @@ th {
 
 /* Logout button styles */
 .logout-container {
-    position: absolute;
+    position: fixed; /* Position fixed for better visibility */
     top: 0;
     right: 0;
-    margin-right: 30px;
-    margin-top: 30px;
-    padding-bottom:10px;
-    padding-top: 10px;
-    display: inline;
-    padding-right: 30px;
-    height: 20px;
-    width: 80px;
+    margin: 10px; /* Adjust margin for better spacing */
+    padding: 10px;
     background-color:  lightsalmon;
     border-radius: 10px;
-   
+    z-index: 999; /* Ensure it's on top of other content */
 }
+
 .logout-container:hover {
-    background-color: lightgreen}
+    background-color: lightgreen;
+}
 
 .logout-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox for layout */
-    
 }
 
 .logout-container ul li {
@@ -73,4 +69,6 @@ th {
     text-decoration: none;
     color: black;
 }
+
+
 
