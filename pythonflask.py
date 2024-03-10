@@ -250,6 +250,7 @@ def protected():
             data = cursor.fetchall()
             return render_template("detail.html", data=data)
         else:
+            email=None
             # User is not authorize
             return redirect(url_for('submit'))
     else:
