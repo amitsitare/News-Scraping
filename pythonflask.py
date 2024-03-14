@@ -3,10 +3,8 @@ from flask import Flask, render_template,redirect,request,url_for,session
 from authlib.integrations.flask_client import OAuth
 
 import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('vader_lexicon')
+nltk.download('all')
+
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from nltk.tag import pos_tag
